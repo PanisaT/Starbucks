@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<link rel="stylesheet" href="fonts/css/font-awesome.min.css">
+	<script src="script.js" type="text/javascript"></script>
+
+	<!-- Bootstrap Core CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+      
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+
+<body>
+<div class="wrapper black">
+	<div class="title">
+		My Cards
+	</div>
+
+
+
+	<div class="reward">
+		<div class="score">101</div>
+		<div class="reward-txt">
+			<h4 style="color: #6cb23f"><i class="fa fa-star"></i> Green level</h4>
+			<h6 style="color: #fff; position:absolute; top:73px;">STARS YOU'VE EARNED</h6>
+			<span class="reward-detail">Your Membership expiry date is 2017-03-29, 49 more Stars to reach Gold level.</span>
+		</div>
+		<a href="mybenefit.html"><button type="button" class="btnstyle reward-btn">Rewards</button></a>
+	</div>
+
+	<a href="#">
+		<div class="touch">
+			<i class="fa fa-hand-o-up fa-lg"></i>
+			<br>
+			Touch to Pay
+		</div>
+	</a>
+
+	<div class="card">
+		<div class="card-box">
+			<div class="card-img"></div>
+			<a href="addcard.html">
+				<div class="addcard-img"></div>
+			</a>
+		</div>
+
+
+
+		<div class="card-txt">
+			<div class="txt-left">
+				<h3>Baht 205.00</h3>
+
+				<h5>As of 2560-02-22 10:43</h5>
+			</div>
+			<div class="txt-right">
+				<h5>
+				Registerd
+				<br>
+				608015244159622
+				</h5>
+			</div>
+		</div>
+
+		<div class="card-btn">
+			<button type="button" class="btnstyle manage-btn" id="myBtn">Manage</button>
+			<a href="addcard.html"><button type="button" class="btnstyle addCard-btn"">Add a Card</button></a>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal1">
+
+	<!-- Modal content -->
+	<div class="modal-content">
+		<span class="close"></span>
+
+		<a href="index.html" class="no-deco">
+			<div class="modal-box">
+				<p>Refresh Balance</p>
+			</div>
+		</a>
+
+		<a href="history.html" class="no-deco">
+			<div class="modal-box">
+				<p>Transaction History</p>
+			</div>
+		</a>
+
+		<a href="index.html" class="no-deco">
+			<div class="modal-box no-line">
+				<p>Cancel</p>
+			</div>
+		</a>
+	</div>
+</div>
+
+
+
+
+<script>
+	// Get the modal
+	var modal1 = document.getElementById('myModal');
+
+	// Get the button that opens the modal
+	var btn = document.getElementById("myBtn");
+
+	// Get the <span> element that closes the modal
+	var span = document.getElementsByClassName("close")[0];
+
+	// When the user clicks the button, open the modal 
+	btn.onclick = function() {
+	    modal1.style.display = "block";
+	}
+
+	// When the user clicks on <span> (x), close the modal
+	span.onclick = function() {
+	    modal1.style.display = "none";
+	}
+
+	// When the user clicks anywhere outside of the modal, close it
+	window.onclick = function(event) {
+	    if (event.target == modal1) {
+	        modal1.style.display = "none";
+	    }
+	}
+</script>
+
+
+
+
+
+</div><!-- wrapper -->
+</body>
+</html>

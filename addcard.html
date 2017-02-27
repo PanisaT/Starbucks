@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<link rel="stylesheet" href="fonts/css/font-awesome.min.css">
+
+	<!-- Bootstrap Core CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+      
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+
+<body>
+<div class="wrapper black">
+	<div class="title">
+		My Cards
+	</div>
+
+
+
+	<div class="reward">
+		<div class="score">101</div>
+		<div class="reward-txt">
+			<h4 style="color: #6cb23f"><i class="fa fa-star"></i> Green level</h4>
+			<h6 style="color: #fff; position:absolute; top:73px;">STARS YOU'VE EARNED</h6>
+			<span class="reward-detail">Your Membership expiry date is 2017-03-29, 49 more Stars to reach Gold level.</span>
+		</div>
+		<a href="mybenefit.html"><button type="button" class="btnstyle reward-btn">Rewards</button></a>
+	</div>
+
+
+	<div class="card">
+		<div class="card-box">
+			<img id="imgDisp" src="img/addcard.jpg"  class="inputcard" onclick="changeImage('img/cardinfo.jpg')"/>
+		</div>
+
+		<a href="index.html">
+			<div class="card-back"></div>
+		</a>
+	</div>
+
+
+
+
+
+
+
+
+<script>
+	function changeImage(imgName)
+	{
+		image = document.getElementById('imgDisp');
+		image.src = imgName;
+	}
+</script>
+
+
+
+
+
+
+
+</div><!-- wrapper -->
+</body>
+</html>
